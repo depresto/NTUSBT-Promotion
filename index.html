@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="normalize.css">
+	<style>
+		@media screen and (min-width: 980px) {
+			#pic {
+				width: 700px;
+				height: 700px;
+				margin-top: -350px;
+				margin-left: -350px;
+			}
+			h1, h2 {
+				font-size: 72px;
+			}
+			#contain {
+				width: 500px;
+				height: 300px;
+				margin-top:-150px;
+				margin-left: -250px;
+			}
+			a img {
+				width: 150px;
+				height: 150px;
+			}
+		}
+		@media screen and (min-width: 768px) and (max-width: 979px) {
+			#pic {
+				width: 500px;
+				height: 500px;
+				margin-top: -250px;
+				margin-left: -250px;
+			}
+			h1, h2 {
+				font-size: 50px;
+			}
+			#contain {
+				width: 350px;
+				height: 200px;
+				margin-top:-100px;
+				margin-left: -175px;
+			}
+			a img {
+				width: 150px;
+				height: 150px;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			#pic {
+				width: 400px;
+				height: 400px;
+				margin-top: -200px;
+				margin-left: -200px;
+			}
+			h1, h2 {
+				font-size: 40px;
+			}
+			#contain {
+				width: 250px;
+				height: 150px;
+				margin-top:-75px;
+				margin-left: -125px;
+			}
+			a img {
+				width: 100px;
+				height: 100px;
+			}
+			#fb {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+		@media screen and (max-device-width: 480px) {
+			#pic {
+				width: 300px;
+				height: 300px;
+				margin-top: -150px;
+				margin-left: -150px;
+			}
+			h1, h2 {
+				font-size: 35px;
+			}
+			a img {
+				width: 80px;
+				height: 80px;
+			}
+			#fb {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+		html, body {
+			height: 100%;
+			background: url(bg.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		article {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			display:table;
+		}
+		#pic {
+			background: url(pic.png);
+			background-size: contain;
+			position:absolute;
+			top:50%;
+			left: 50%;
+		}
+		h1 {
+			top: 50%;
+			text-align: center;
+			font-family: 'STHeitiTC', 'Heiti TC', sans-serif;
+			color: #fff;
+			text-shadow: 3px 3px 0px #000;
+		}
+		h2 {
+			text-align: center;
+			font-family: CenturyGothic, sans-serif;
+			color: #fff;
+			text-shadow: 3px 3px 0px #000;
+		}
+		#contain {
+			position:absolute;
+			top:50%;
+			left: 50%;
+		}
+		a img{
+			-webkit-box-shadow: 5px 5px 5px 0px #606060;
+			-moz-box-shadow: 5px 5px 5px 0px #606060;
+			box-shadow: 5px 5px 5px 0px #606060;
+		}
+		a {
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<div id="pic"></div>
+		<div id="contain">
+			<h1>全腦諮詢專線</h1>
+			<h2>0981626139</h2>
+		</div>
+		<div id="fb">
+			<a href="https://www.facebook.com/DingAiCultureEnterprise"><img src="dingai.jpg" alt="鼎愛文化"></a>
+			<a href="https://www.facebook.com/WholeBrainThinking"><img src="fb_md.jpg" alt="社團粉專"></a>
+		</div>
+	</article>
+</body>
+</html>
